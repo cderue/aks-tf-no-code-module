@@ -1,3 +1,27 @@
+variable "tenant_id" {
+  type        = string
+  default     = ""
+  description = "Azure tenant identifier."
+}
+
+variable "subscription_id" {
+  type        = string
+  default     = ""
+  description = "Azure subscription identifier."
+}
+
+variable "client_id" {
+  type        = string
+  default     = ""
+  description = "Service principal application identifier."
+} 
+
+variable "client_secret" {
+  type        = string
+  default     = ""
+  description = "Service principal password."
+} 
+
 variable "resource_group_location" {
   type        = string
   default     = "eastus"
